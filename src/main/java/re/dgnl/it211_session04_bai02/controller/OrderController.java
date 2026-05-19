@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 /*
- * PHẦN 1 – LÝ THUYẾT: POST HAY PUT?
+ * PHẦN 1
+ *  Đồng nghiệp B ĐÚNG khi chọn POST /api/v1/orders.
  *
- * 1. Kết luận: Đồng nghiệp B ĐÚNG khi chọn POST /api/v1/orders.
- *
- * 2. Giải thích nguyên nhân:
+ * Giải thích nguyên nhân:
  *    - Quy tắc sinh ID: Nghiệp vụ yêu cầu "Hệ thống tự sinh orderId". PUT yêu cầu client
  *      phải biết trước ID và chỉ định rõ trên URL (Ví dụ: PUT /orders/ORD123). Do client
  *      không biết trước ID khi đặt hàng, việc dùng POST gửi lên một tập hợp (Collection)
